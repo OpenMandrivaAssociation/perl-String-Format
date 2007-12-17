@@ -15,7 +15,6 @@ Source:         http://www.cpan.org/modules/by-module/String/%{module}-%{version
 Buildrequires:  perl-devel
 %endif
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 String::Format lets you define arbitrary printf-like format sequences to be
