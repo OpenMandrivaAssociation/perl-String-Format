@@ -1,21 +1,21 @@
-%define module  String-Format
-%define name    perl-%{module}
-%define version 1.16
-%define release %mkrel 1
+%define upstream_name    String-Format
+%define upstream_version 1.16
 
-Name:           %{name}
-Version:        %{version}
-Release:        %{release}
-Summary:        Sprintf-like string formatting capabilities with arbitrary format definitions 
-License:        GPL or Artistic
-Group:          Development/Perl
-Url:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/String/%{module}-%{version}.tar.bz2
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:    Sprintf-like string formatting capabilities with arbitrary format definitions 
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/String/%{upstream_name}-%{upstream_version}.tar.bz2
+
 %if %{mdkversion} < 1010
 Buildrequires:  perl-devel
 %endif
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 String::Format lets you define arbitrary printf-like format sequences to be
@@ -25,7 +25,7 @@ It was inspired by mutt's index_format and related directives (see
 <URL:http://www.mutt.org/doc/manual/manual-6.html#index_format>).
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -46,4 +46,3 @@ rm -rf %{buildroot}
 %doc Changes README
 %{perl_vendorlib}/String
 %{_mandir}/*/*
-
