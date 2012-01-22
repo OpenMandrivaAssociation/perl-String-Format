@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    %mkrel 4
 
 Summary:    Sprintf-like string formatting capabilities with arbitrary format definitions 
 License:    GPL+ or Artistic
