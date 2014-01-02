@@ -1,2 +1,4 @@
+removed_sources:
+  String-Format-1.16.tar.bz2: 0bdf2bdc6104eafdcb17e2636e8cfffda213b800
 sources:
-  "String-Format-1.16.tar.bz2": 0bdf2bdc6104eafdcb17e2636e8cfffda213b800
+  String-Format-1.17.tar.gz: bbfa7aff13c0aefbb4b24cb12ddbba4a54936c99
