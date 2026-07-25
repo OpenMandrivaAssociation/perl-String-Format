@@ -1,14 +1,14 @@
 %define modname	String-Format
-%define modver 1.17
+%define modver 1.18
 
 Summary:	Sprintf-like string formatting capabilities with arbitrary format definitions 
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	9
+Version:	%{modver}
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/String/String-Format-%{modver}.tar.gz
+Url:		https://metacpan.org/dist/String-Format
+Source0:	https://cpan.metacpan.org/authors/id/S/SR/SREZIC/String-Format-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl(Test::More)
