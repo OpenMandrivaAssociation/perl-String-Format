@@ -7,7 +7,7 @@ Version:	%{modver}
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://metacpan.org/dist/String-Format
+Url:		https://github.com/dlc/string--format
 Source0:	https://cpan.metacpan.org/authors/id/S/SR/SREZIC/String-Format-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
